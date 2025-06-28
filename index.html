@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward Apolinario Balbares</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Edward</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="#resume">Resume</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Edward Apolinario Balbares</h1>
+            <p>
+                "Technical writing is the bridge between innovation and understanding."
+            </p>
+            <p>Currently I'm a student of DLSJBC, where I'm persuing my bachelor's degree in Information Technology.</p>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/edward.apolinario.balbares" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-pen'></i>
+                    <h3>Technical Writer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-game'></i>
+                    <h3>Gamer</h3>
+                </div>
+                <div class="circle"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Home Image - Back inside home section -->
+        <div class="home-img" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); z-index: 10; max-width: 480px; max-height: 100vh; box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); pointer-events: none;">
+            <img src="images/Edward.png" alt="Edward Apolinario Balbares - Web Developer and Technical Writer" loading="eager" style="width: 100%; height: auto; transition: transform 0.3s ease;">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/Ed.jpg" alt="Edward Balbares - Professional headshot" loading="lazy">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hi there, welcome to my website! I'm Edward,
+                a passionate web developer who enjoys learning new technologies
+                and solving problems with code!
+            </h3>
+           
+            <p>
+                Thank you for visiting my website and getting to know me better. 
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>SKills</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>"Great developers don't just write code, they write the future of the web."</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Technical Writer</h3>
+                <p>"If knowledge is power, technical writing is how we share it."</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/Award.jpg" alt="CSS Penalty Monitoring System - Academic Defense Project" loading="lazy">
+                <div class="portfolio-layer">
+                    <h4>CSS:PENALTY MONITORING SYSTEM</h4>
+                    <p>Defense</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <div class="contact-container">
+            <!-- Message Form -->
+            <div class="message-form">
+                <h3>Send me a message</h3>
+                <form id="messageForm">
+                    <div class="input-box">
+                        <input type="text" name="full_name" placeholder="Full Name" maxlength="50" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="textarea-container">
+                        <textarea name="message_content" cols="30" rows="10" placeholder="Your Message (10-500 characters)" maxlength="500" required></textarea>
+                        <div class="char-count">
+                            <span id="charCount">0</span>/500
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+               
+            </div>
+
+            <!-- Message Board -->
+            <div class="message-board">
+                <div class="message-board-header">
+                    <h3>Message Board</h3>
+                    <button class="admin-btn" onclick="clearAllMessages()" title="Clear all messages">
+                        <i class='bx bx-trash-alt'></i>
+                        Clear All
+                    </button>
+                </div>
+                <div id="messagesContainer">
+                    <div class="loading">Loading messages...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- resume section design -->
+    <section class="resume" id="resume">
+        <h2 class="heading">My <span>Resume</span></h2>
+    
+        <div class="resume-container">
+            <div class="resume-header">
+                <div class="resume-avatar">
+                    <img src="images/Edward.png" alt="Edward Apolinario Balbares - Professional Avatar" loading="lazy">
+                </div>
+                <div class="resume-info">
+                    <h3>Edward Apolinario Balbares</h3>
+                    <p class="resume-title">Web Developer & Technical Writer</p>
+                    <div class="resume-contact">
+                        <div class="contact-item">
+                            <i class='bx bx-envelope'></i>
+                            <span>edwardblbaresz@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class='bx bx-phone'></i>
+                            <span>0912-345-6789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class='bx bx-graduation'></i>
+                            <span>BS in Information Technology, DLSJBC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-content">
+                <div class="resume-section">
+                    <div class="section-header">
+                        <i class='bx bx-target-lock'></i>
+                        <h4>Career Objective</h4>
+                    </div>
+                    <p>To contribute to innovative web solutions while continuously improving my technical and communication skills. Passionate about creating user-friendly applications and writing clear, comprehensive documentation.</p>
+                </div>
+
+                <div class="resume-section">
+                    <div class="section-header">
+                        <i class='bx bx-code-alt'></i>
+                        <h4>Technical Skills</h4>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h5>Frontend Development</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Responsive Design</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h5>Backend Development</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">Database Design</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h5>Other Skills</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Technical Writing</span>
+                                <span class="skill-tag">UI/UX Awareness</span>
+                                <span class="skill-tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="section-header">
+                        <i class='bx bx-briefcase'></i>
+                        <h4>Featured Project</h4>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h5>CSS: Penalty Monitoring System</h5>
+                            <span class="project-type">Academic Defense</span>
+                        </div>
+                        <p>A comprehensive web-based system developed for academic defense to assist faculty in monitoring and managing student violations efficiently. Features include user authentication, violation tracking, and reporting capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="section-header">
+                        <i class='bx bx-download'></i>
+                        <h4>Download Resume</h4>
+                    </div>
+                    <div class="download-section">
+                        <p>Get a detailed version of my resume in PDF format</p>
+                        <a href="files/Edward_Balbares_Resume.pdf" class="btn download-btn" download>
+                            <i class='bx bx-download'></i>
+                            Download Resume (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 | All Rights Reserved @DLSJBC.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home" id="scrollToTop"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="sctipt.js"></script>
+</body>
+
+</html> 
