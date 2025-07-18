@@ -2085,3 +2085,14 @@ img:not([src])::after, img[src=""]::after {
 .char-count.danger {
     color: #e74c3c;
 }
+
+/* Academic Grades Section */
+.grades-list {
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.grades-list li {
+    font-size: 1.3em;
+    margin-bottom: 0.25em;
+}
